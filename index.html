@@ -1,132 +1,232 @@
 <!doctype html>
 <html lang="en-us">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CAPSTONE | Smart Bites</title>
-    <style>
-        /* ===== General Styles ===== */
-        body {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #e4e3ec;
-            margin: 0;
-            padding: 0;
-        }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CAPSTONE | Smart Bites</title>
+        <style>
+            /* ===== General Styles ===== */
+            body {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #e4e3ec;
+                margin: 0;
+                padding: 0;
+            }
 
-        header {
-            background-color: #686096;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
+            header {
+                background-color: #686096;
+                padding: 20px;
+                text-align: center;
+                color: white;
+            }
 
-        nav {
-            background-color: #a19cbd;
-            padding: 10px;
-            text-align: center;
-        }
+            /* ===== Navigation ===== */
+            nav {
+                background-color: #a19cbd;
+                padding: 15px;
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                flex-wrap: wrap;
+            }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
+            nav a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+                display: inline-block;
+                white-space: nowrap;
+                font-weight: bold;
+            }
 
-        nav a:hover {
-            background-color: #20c7d9;
-        }
+            nav a:hover {
+                background-color: #20c7d9;
+            }
 
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
+            /* Current Page Highlight */
+            .active {
+                background-color: #20c7d9;
+            }
 
-        .page-content {
-            background-color: white;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center; /* replaces <center> */
-        }
+            .container {
+                max-width: 900px;
+                margin: 20px auto;
+                padding: 0 20px;
+            }
 
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
+            .page-content {
+                background-color: white;
+                padding: 20px;
+                margin-top: 20px;
+                border-radius: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
 
-        footer p {
-            margin: 0;
-        }
+            .page-content img {
+                max-width: 300px;
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
 
-        .list {
-            text-align: justify;
-            font-size: 18px;
-        }
-    </style>
-</head>
-<body>
-    <!-- ===== Header ===== -->
-    <header>
-        <p style="font-size: 40px; font-family: Times New Roman">Smart Bites</p>
-    </header>
+            .list {
+                text-align: left;
+                font-size: 18px;
+            }
 
-    <!-- ===== Navigation ===== -->
-<nav>
-    <a href="/Smart-Bites/index.html"><strong>Home</strong></a>
-    <a href="/Smart-Bites/healthy_tips.html"><strong>Healthy Tips</strong></a>
-    <a href="/Smart-Bites/foods_to_avoid.html"><strong>Foods to Avoid</strong></a>
-    <a href="/Smart-Bites/meal_ideas.html"><strong>Meal Ideas</strong></a>
-    <a href="/Smart-Bites/about.html"><strong>About</strong></a>
-</nav>
+            footer {
+                background-color: #2c3e50;
+                color: white;
+                text-align: center;
+                padding: 15px;
+                margin-top: 20px;
+            }
 
-    <!-- ===== Main Content ===== -->
-    <div class="container">
-        <section id="home" class="page-content">
-            <h2>Welcome to Smart Bites</h2>
-            <p>This will show the objectives of our project!</p>
-        </section>
+            footer p {
+                margin: 0;
+            }
+        </style>
+        <style>
+            /* ===== General Styles ===== */
+            body {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #e4e3ec;
+                margin: 0;
+                padding: 0;
+            }
 
-        <section id="yoga" class="page-content">
-            <h2>Image/Icon</h2>
-            <!-- Add a proper image path here -->
-            <img src="data:image/jpeg;base64,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" />
-        </section>
+            header {
+                background-color: #686096;
+                padding: 20px;
+                text-align: center;
+                color: white;
+            }
 
-        <div>
-            <section id="breathing" class="page-content">
-                <h2>Text/Content</h2>
-                <ol class="list">
-                    <li>Enter text here</li>
-                    <li>Enter text here</li>
-                    <li>Enter text here</li>
-                    <li>Enter text here</li>
-                    <li>Enter text here</li>
-                </ol>
+            /* ===== Navigation ===== */
+            nav {
+                background-color: #a19cbd;
+                padding: 15px;
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+                display: inline-block;
+                white-space: nowrap;
+                font-weight: bold;
+            }
+
+            nav a:hover {
+                background-color: #20c7d9;
+            }
+
+            /* Current Page Highlight */
+            .active {
+                background-color: #20c7d9;
+            }
+
+            .container {
+                max-width: 900px;
+                margin: 20px auto;
+                padding: 0 20px;
+            }
+
+            .page-content {
+                background-color: white;
+                padding: 20px;
+                margin-top: 20px;
+                border-radius: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+
+            .page-content img {
+                max-width: 300px;
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+
+            .list {
+                text-align: left;
+                font-size: 18px;
+            }
+
+            footer {
+                background-color: #2c3e50;
+                color: white;
+                text-align: center;
+                padding: 15px;
+                margin-top: 20px;
+            }
+
+            footer p {
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- ===== Header ===== -->
+        <header>
+            <p style="font-size: 40px; font-family: Times New Roman">Smart Bites</p>
+        </header>
+
+        <!-- ===== Navigation ===== -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="healthy_tips.html">Healthy Tips</a>
+            <a href="foods_to_avoid.html">Foods to Avoid</a>
+            <a href="meal_ideas.html">Meal Ideas</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <!-- ===== Main Content ===== -->
+        <div class="container">
+            <section id="home" class="page-content">
+                <h2>Welcome to Smart Bites</h2>
+                <p>This will show the objectives of our project!</p>
+            </section>
+
+            <section id="yoga" class="page-content">
+                <h2>Image/Icon</h2>
+                <!-- Add a proper image path here -->
+                <img
+                    src="data:image/jpeg;base64,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" />
+            </section>
+
+            <div>
+                <section id="breathing" class="page-content">
+                    <h2>Text/Content</h2>
+                    <ol class="list">
+                        <li>Enter text here</li>
+                        <li>Enter text here</li>
+                        <li>Enter text here</li>
+                        <li>Enter text here</li>
+                        <li>Enter text here</li>
+                    </ol>
+                </section>
+            </div>
+
+            <section class="page-content">
+                <h1>Footer Section</h1>
+                <a href="Link"><p>Link</p></a>
+                <p>Even more text</p>
             </section>
         </div>
 
-        <section class="page-content">
-            <h1>Footer Section</h1>
-            <a href="Link"><p>Link</p></a>
-            <p>Even more text</p>
-        </section>
-    </div>
-
-    <!-- ===== Footer ===== -->
-    <footer>
-        <p>Smart Bites © 2026</p>
-    </footer>
-</body>
-
+        <!-- ===== Footer ===== -->
+        <footer>
+            <p>Smart Bites © 2026</p>
+        </footer>
+    </body>
 </html>
