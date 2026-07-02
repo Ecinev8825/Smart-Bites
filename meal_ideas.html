@@ -6,6 +6,91 @@
         <title>CAPSTONE | Smart Bites</title>
         <style>
             /* ===== General Styles ===== */
+           body {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #e4e3ec;
+                margin: 0;
+                padding: 0;
+            }
+
+            header {
+                background-color: #686096;
+                padding: 20px;
+                text-align: center;
+                color: white;
+            }
+
+            /* ===== Navigation ===== */
+            nav {
+                background-color: #a19cbd;
+                padding: 15px;
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+                display: inline-block;
+                white-space: nowrap;
+                font-weight: bold;
+            }
+
+            nav a:hover {
+                background-color: #20c7d9;
+            }
+
+            /* Current Page Highlight */
+            .active {
+                background-color: #20c7d9;
+            }
+
+            .container {
+                max-width: 900px;
+                margin: 20px auto;
+                padding: 0 20px;
+            }
+
+            .page-content {
+                background-color: white;
+                padding: 20px;
+                margin-top: 20px;
+                border-radius: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+
+            .page-content img {
+                max-width: 300px;
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+
+            .list {
+                text-align: left;
+                font-size: 18px;
+            }
+
+            footer {
+                background-color: #2c3e50;
+                color: white;
+                text-align: center;
+                padding: 15px;
+                margin-top: 20px;
+            }
+
+            footer p {
+                margin: 0;
+            }
+        </style>
+        <style>
+            /* ===== General Styles ===== */
             body {
                 font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
                 background-color: #e4e3ec;
@@ -20,10 +105,14 @@
                 color: white;
             }
 
+            /* ===== Navigation ===== */
             nav {
                 background-color: #a19cbd;
-                padding: 10px;
-                text-align: center;
+                padding: 15px;
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                flex-wrap: wrap;
             }
 
             nav a {
@@ -32,18 +121,22 @@
                 padding: 10px 20px;
                 border-radius: 5px;
                 transition: background-color 0.3s ease;
+                display: inline-block;
+                white-space: nowrap;
+                font-weight: bold;
             }
 
             nav a:hover {
-            background-color: #20c7d9;
+                background-color: #20c7d9;
             }
 
+            /* Current Page Highlight */
             .active {
                 background-color: #20c7d9;
             }
 
             .container {
-                max-width: 800px;
+                max-width: 900px;
                 margin: 20px auto;
                 padding: 0 20px;
             }
@@ -52,29 +145,33 @@
                 background-color: white;
                 padding: 20px;
                 margin-top: 20px;
-                border-radius: 10px;
+                border-radius: 20px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+
+            .page-content img {
+                max-width: 300px;
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+
+            .list {
+                text-align: left;
+                font-size: 18px;
             }
 
             footer {
                 background-color: #2c3e50;
                 color: white;
                 text-align: center;
-                padding: 10px;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
+                padding: 15px;
+                margin-top: 20px;
             }
 
             footer p {
                 margin: 0;
-            }
-
-            .list {
-                text-align: justify;
-                font-size: 18px;
             }
         </style>
     </head>
